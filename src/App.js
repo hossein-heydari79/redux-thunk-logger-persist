@@ -12,20 +12,18 @@ function App() {
   return (
     <>
       <Grid container justifyContent="center" alignItems="center">
+        <Alert severity="success">This is a success alert — check it out!</Alert>
         <Grid item>
-          {count.loading ? (
-            <CircularProgress />
-          ) : (
-            <Tooltip title="Count">
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={() => dispatch(incrementAsync())}
-              >
-                {count.count}
-              </Button>
-            </Tooltip>
-          )}
+          <CircularProgress />
+          <Tooltip title="Count">
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={() => dispatch(incrementAsync())}
+            >
+              {count.count}
+            </Button>
+          </Tooltip>
         </Grid>
       </Grid>
     </>
