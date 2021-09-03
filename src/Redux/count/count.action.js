@@ -24,4 +24,4 @@ function incrementAsync() {
   };
 }
 
-export { incrementAsync };
+export { incrementAsync, increase };
